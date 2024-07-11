@@ -3,8 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
     <title>Gosti Group</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+
     <link href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet">
     <link rel="stylesheet" href="./css/main.css">
 </head>
@@ -371,6 +374,10 @@
     </div>
     <script>
         window.addEventListener('load', () => {
+            const tg = window.Telegram.WebApp;
+
+            tg.expand(); // открытие на всю высоту
+
             const appLogic = () => {
 
                 document.addEventListener('DOMContentLoaded', function () {
