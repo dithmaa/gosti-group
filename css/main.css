@@ -460,6 +460,10 @@ footer {
     display: block;
 }
 
+.signup {
+    padding-bottom: 270px;
+}
+
 button {
     cursor: pointer;
 }
