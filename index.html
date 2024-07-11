@@ -379,8 +379,11 @@
             tg.expand(); // открытие на всю высоту
 
             document.getElementById('scrollInput').addEventListener('focus', function () {
-                alert('');
-                window.scrollBy(0, -900); // Прокрутка на 400px вверх
+                alert('d');
+                window.scrollTo({
+                    top: window.scrollY - 500,
+                    behavior: 'smooth'
+                });
             });
 
             const appLogic = () => {
